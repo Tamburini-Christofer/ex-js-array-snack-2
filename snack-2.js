@@ -44,3 +44,13 @@ const books = [
 	  tags: ['html', 'advanced', 'junior', 'mid-senior']
   },
 ];
+
+const availableBooks = books.filter(b => b.available === true);
+console.log(availableBooks)
+
+const discountedBooks = availableBooks.map(b => ({
+  ...b,
+  price: Number((b.price * 0.8).toFixed(2))
+}));
+
+const fullPricedBook = discountedBooks.find(b => Number.isInteger(b.price));

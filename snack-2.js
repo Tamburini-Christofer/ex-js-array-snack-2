@@ -44,16 +44,3 @@ const books = [
 	  tags: ['html', 'advanced', 'junior', 'mid-senior']
   },
 ];
-
-const somma = (a, b) => a + b;
-
-const longBooks = books.filter(b => b.pages > 300)
-console.log(longBooks)
-
-const longBooksTitles = longBooks.map(b => b.title)
-console.log(longBooksTitles)
-
-longBooksTitles.forEach(title => console.log(title));
-
-
-

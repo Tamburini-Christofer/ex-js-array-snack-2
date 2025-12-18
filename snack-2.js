@@ -1,4 +1,4 @@
-const books = [
+const books2 = [
   { 
 	  title: "React Billionaire", 
 	  pages: 250, 
@@ -45,7 +45,7 @@ const books = [
   },
 ];
 
-const availableBooks = books.filter(b => b.available === true);
+const availableBooks = books2.filter(b => b.available);
 console.log(availableBooks)
 
 const discountedBooks = availableBooks.map(b => ({

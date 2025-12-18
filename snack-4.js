@@ -1,4 +1,4 @@
-const books = [
+const books4 = [
   { 
 	  title: "React Billionaire", 
 	  pages: 250, 
@@ -45,7 +45,7 @@ const books = [
   },
 ];
 
-const ages = books.map(a => a.author.age)
+const ages = books4.map(a => a.author.age)
 console.log(ages)
 const agesSum = ages.reduce((a,b) => a + b, 0)
 

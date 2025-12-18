@@ -1,4 +1,4 @@
-const books = [
+const books1 = [
   { 
 	  title: "React Billionaire", 
 	  pages: 250, 
@@ -47,7 +47,7 @@ const books = [
 
 const somma = (a, b) => a + b;
 
-const longBooks = books.filter(b => b.pages > 300)
+const longBooks = books1.filter(b => b.pages > 300)
 console.log(longBooks)
 
 const longBooksTitles = longBooks.map(b => b.title)

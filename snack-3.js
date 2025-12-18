@@ -1,4 +1,4 @@
-const books = [
+const books3 = [
   { 
 	  title: "React Billionaire", 
 	  pages: 250, 
@@ -45,7 +45,7 @@ const books = [
   },
 ];
 
-const authors = books.map(b => b.author)
+const authors = books3.map(b => b.author)
 console.log(authors)
 
 const areAuthorsAdults = authors.every(a => a.age >= 18)

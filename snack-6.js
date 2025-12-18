@@ -1,4 +1,4 @@
-const books = [
+const books6 = [
   { 
 	  title: "React Billionaire", 
 	  pages: 250, 
@@ -45,10 +45,10 @@ const books = [
   },
 ];
 
-const areThereAvailableBooks = books.some(b => b.available === true)
+const areThereAvailableBooks = books6.some(b => b.available === true)
 console.log(areThereAvailableBooks)
 
-const booksByPrice = books.sort((a,b) => a.price - b.price)
+const booksByPrice = books6.sort((a,b) => a.price - b.price)
 console.log(booksByPrice)
 
 booksByPrice.sort((a, b) => b.available - a.available);
